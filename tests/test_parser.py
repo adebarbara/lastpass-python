@@ -111,7 +111,7 @@ class ParserTestCase(unittest.TestCase):
         chunk = Chunk(b'PRIK', self.encoded_rsa_key)
         rsa_key = parser.parse_PRIK(chunk, self.rsa_key_encryption_key)
 
-        from Crypto.PublicKey.RSA import RsaKey
+        from Cryptodome.PublicKey.RSA import RsaKey
         self.assertIsInstance(rsa_key, RsaKey)
 
         self.assertEqual(str(rsa_key.n), ("26119467519435514320618523953258926539081857789201" +
