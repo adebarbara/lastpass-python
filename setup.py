@@ -23,7 +23,7 @@ setup(
     packages=['lastpass'],
     install_requires=[
         "requests>=1.2.1,<=3.0.0",
-        "pycryptodome>=3.4",
+        "pycryptodomex>=3.4",
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
